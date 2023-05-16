@@ -23,8 +23,8 @@ public class CityController {
         return _service.GetAll();
     }
 
-    @GetMapping(path = "/{cityId}}")
-    public City GetAllCities(Long cityId){
-        return _service.GetById(cityId);
-    }
+    // @GetMapping(path = "/{cityId}}")
+    // public City GetAllCities(Long cityId){
+    //     return _service.GetById(cityId);
+    // }
 }
