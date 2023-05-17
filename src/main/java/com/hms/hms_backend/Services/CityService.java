@@ -24,4 +24,12 @@ public class CityService {
     public City GetById(Long cityId){
         return _cityRepo.findById(cityId).get();
     }
+    
+    public City Create(City newCity){
+        return _cityRepo.save(newCity);
+    }
+
+    public City GetByName (String cityName){
+        return _cityRepo.findByName(cityName);
+    }
 }

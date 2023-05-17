@@ -13,8 +13,8 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "Name")
-    private String Name;
+    @Column(name = "name",nullable = false,unique = false)
+    private String name;
 
     public Long getId() {
         return id;
@@ -25,11 +25,11 @@ public class City {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String Name) {
-        this.Name = Name;
+        this.name = Name;
     }
 
     public City() {}
